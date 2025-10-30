@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Your name here">
+  <meta name="description" content="One week of #RunKeeper Tweets">
+  <!--Online scripts-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.0.1/math.js" integrity="sha512-ldafwBWmh8q0wplbjDzai4As66n/6e0kxw51a+LRJ6+aZ27t0oGpz7HH5dUh+MwWLacrsF8cGT4zR0p2S3QHtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--Local scripts-->
+  <script type="text/javascript" src="js/get_saved_tweets.js"></script><!--Local runkeeper_tweets file, which will load all of the tweets into the variable RUNKEEPER_TWEETS-->
+  <script type="text/javascript" src="js/tweet.js"></script><!--Load local tweet.js file, which was generated from TypeScript-->
+  <script type="text/javascript" src="js/about.js"></script>
+
+  <!--Stylesheets-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css"><!--local stylesheet-->
+  <title>One week of #RunKeeper Tweets</title>
+</head>
+<body class="container">
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item navbar-brand">
+        <span class="navbar-brand">
+          One week of #RunKeeper Tweets
+        </span>
+      </li>
+      <li class="nav-item active">
+        <a href="index.html" class="nav-link">
+          About the data
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="activities.html" class="nav-link">
+          A wide range of activities
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="descriptions.html" class="nav-link">
+          What people are saying
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <h1>About the data</h1>
+    <p>There were <span id="numberTweets">???</span> English Tweets with the Hashtag <em>#RunKeeper</em> between <span id="firstDate">January 1st, 2000</span> and <span id="lastDate">January 1st, 2000</span>.</p>
+    <p>Completed Events: <span class="completedEvents">???</span> (<span class="completedEventsPct">?.??%</span>)</p>
+    <p>Live Events: <span class="liveEvents">???</span> tweets (<span class="liveEventsPct">?.??%</span>)</p>
+    <p>Achievements: <span class="achievements">???</span> tweets (<span class="achievementsPct">?.??%</span>)</p>
+    <p>Miscellaneous: <span class="miscellaneous">???</span> tweets (<span class="miscellaneousPct">?.??%</span>)</p>
+    <p>Of the <span class="completedEvents">???</span> of Tweets of completed events, <span class="written">???</span> (<span class="writtenPct">?.??%</span>) included user-written text.</p>
+  </main>
+</body>
+</html>
